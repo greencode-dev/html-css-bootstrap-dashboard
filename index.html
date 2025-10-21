@@ -10,4 +10,34 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/duck.png" type="image/png" />
   </head>
+
+  <body class="bg-light">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark sticky-top shadow-sm">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-label="Apri menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="d-flex align-items-center text-decoration-none" href="#" aria-label="Home">
+            <img src="img/duck.png" class="brand-img" alt="Logo" />
+          </a>
+
+          <ul class="navbar-nav d-none d-lg-flex flex-row ms-4 gap-3">
+            <li class="nav-item"><a class="nav-link text-white" href="#">Catalogo Libri</a></li>
+            <li class="nav-item"><a class="nav-link text-gray" href="#">Anagrafica Utenti</a></li>
+            <li class="nav-item"><a class="nav-link text-gray" href="#">Storico Prestiti</a></li>
+            <li class="nav-item"><a class="nav-link text-gray" href="#">Help</a></li>
+          </ul>
+        </div>
+
+        <form class="d-none d-md-flex ms-auto" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Cerca..." aria-label="Cerca" />
+          <button class="btn btn-outline-light btn-sm" type="submit">Cerca</button>
+        </form>
+      </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEw3Yh5N9z5n0I1c8v+6U1d5rK4c5Y8b8vZ6O2e6p8g5H5+q2kQ==" crossorigin="anonymous"></script>
+  </body>
 </html>
